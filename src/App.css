@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+
+:root {
+  --textPri: #ffffff;
+  --textSec: #878787;
+  --colorPri: #1F1F1F;
+  --colorSec: #1a1a1a;
+  --colorTer: #40FF91;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, page{
+  margin: 0 auto;
+  padding: 0;
   display: flex;
+  font-family:'Roboto';
+  color: rgb(247, 247, 247);
+  background-color: var(--colorPri);
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+hr{
+  max-width: 60vw;
+  border: 1px solid var(--textSec);
+  opacity: 0.1;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+button{
+  background-color: var(--colorSec);
+  color: var(--textSec);
+  padding: 10px 30px;
+  border: 1px solid var(--textSec);
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: .4s;
+}
+button:hover{
+  background-color: var(--colorPri);
+  color: var(--textSec);
+  transform: scale(1.1);
+}
+
+.app{
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  color: var(--textSec);
+}
+h4{
+  color: var(--colorTer);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span{
+  color: #ffffff;
+}
+.img-title img{
+  height: 160px;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+
+
+.page-div{
+  display: flex;
+  flex-direction: column;
+  text-align:  -webkit-center;
+
+
+}
+
+.space{
+  padding: 50px;
+}
+
+.space-rigth{
+  margin-right: 119px;
+  width: 100px;
+}
+
+
+.space-left{
+  margin-left: 70px;
+ }
+ 
+ .space-right{
+     margin-right: 70px;
+ }
+ .container{
+  margin-left: 70px;
+ }
+
+
+@media only screen and (max-width: 414px) {
+
+  .space-left{
+    margin-left: 10px;
+   }
+   
+   .space-right{
+       margin-right: 10px;
+   }
+   .container{
+    margin-left: 0px;
+   }
+
 }

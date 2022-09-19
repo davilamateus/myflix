@@ -1,0 +1,23 @@
+.search-div{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.search-div div img{
+    width: 130px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+

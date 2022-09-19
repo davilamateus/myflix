@@ -1,0 +1,86 @@
+.header-box{
+    width: 50px;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    height: 95vh;
+    background-color: #242424;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 40px #12121236;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-top: 1.5vw;
+    left: 0;
+}
+
+.header-box:hover{
+    width: 150px;
+}
+
+.header-box div a{
+    color: rgba(255, 255, 255, 0.448);
+    text-decoration: none;
+    display: flex;
+    margin-left: 13px;
+    width: max-content;
+    margin-bottom: 20px;
+    opacity: 0.3;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.header-box div a:hover{
+    opacity: 1;
+
+}
+
+
+.header-box div a span{
+    margin-left: 14px;
+}
+
+.header-box div a img{
+    height: 24px;
+    max-width: 24px;
+}
+
+.active{
+    opacity: 1!important;
+}
+
+.seach form{
+    display: flex;
+    margin-left: 13px;
+    margin-bottom: 50px;
+
+}
+
+.seach form input{
+    width: 70px;
+    margin-left: 13px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.154);
+    color: rgb(255, 255, 255);
+}
+
+.seach form:focus{
+    opacity: 1;
+}
+
+.logo img{
+    height: 33px;
+    margin: 35px 9px;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .header-box{
+        display: none;
+    }
+
+
+}

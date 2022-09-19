@@ -1,0 +1,22 @@
+.favourite-box{
+    display: flex;
+    place-content: center;
+}
+
+.img-favourite{
+    width: 130px;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.img-favourite {
+    transition: .5s;
+}
+.img-favourite:hover{
+    transform:scale(1.05);
+}
+
+.page-div{
+    width: 100vw;
+}
